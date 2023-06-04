@@ -1,0 +1,39 @@
+.mainContainer {
+    max-width: 400px;
+    border: 1px solid white;
+    margin: 0 10px;
+    overflow: hidden;
+    position: relative;
+    text-align: start;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(0);
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.mainContainer:hover .imgContainer {
+    filter: grayscale(1);
+}
+
+.infoProyect {
+    width: 100%;
+    padding: 10px 20px;
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    background-color: white;
+    color: black;
+    opacity: 0;
+    transition: 1s;
+}
+
+.mainContainer:hover .infoProyect {
+    bottom: 0;
+    opacity: 1;
+}
+
+

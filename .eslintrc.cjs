@@ -5,7 +5,8 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    'airbnb',
+    'airbnb-base',
+    'airbnb/rules/react',
   ],
   overrides: [
   ],
@@ -17,5 +18,10 @@ module.exports = {
     'react',
   ],
   rules: {
+    semi: ['error', 'never'],
+    'linebreak-style': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'react/function-component-definition': 'off',
+    'max-len': 'off',
   },
-};
+}

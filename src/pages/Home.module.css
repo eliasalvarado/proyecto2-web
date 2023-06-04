@@ -1,0 +1,45 @@
+.mainContainer {
+    height: 100vh;
+}
+
+.presentationContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    height: 100vh;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.helloPresentation {
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.h2Presentation {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.namePresentation {
+    font-size: 50px;
+    color: #286863;
+}
+
+.sobremiContainer {
+    background-color: #263326;
+    height: 100vh;
+    align-self: center;
+}
+
+.skillsContainer {
+    height: 100vh;
+}
+
+.portafolioContainer {
+    height: 100vh;
+}

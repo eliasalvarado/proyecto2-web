@@ -1,0 +1,19 @@
+.mainContainer {
+    margin: auto;
+    padding: 100px 20px;
+}
+
+.title {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #638BB3;
+    text-decoration: underline;
+    text-decoration-color: #286863;
+}
+
+.rowContainer {
+    display: grid;
+    gap: 3em;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    place-items: center;
+}

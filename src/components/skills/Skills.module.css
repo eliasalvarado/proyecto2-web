@@ -1,0 +1,63 @@
+.mainContainer {
+    margin: auto;
+    padding: 100px 20px;
+}
+
+.title {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #638BB3;
+    text-decoration: underline;
+    text-decoration-color: #286863;
+}
+
+.rowContainer {
+    display: flex;
+}
+
+.columnContainer {
+    width: 50%;
+    padding: 0 10px;
+}
+
+.subTitleContainer {
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.spanSkill {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.skillBar {
+    width: 80%;
+    height: 8px;
+    background-color: white;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.skillProgress {
+    background-color: #286863;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.skillPercentage {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    font-size: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: #275275;
+    border-radius: 50px;
+    line-height: 30px;
+    text-align: center;
+}

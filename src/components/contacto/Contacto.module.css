@@ -1,0 +1,23 @@
+.ulContainer {
+    display: flex;
+    list-style: none;
+}
+
+.liContainer {
+    margin-right: 20px;
+}
+
+
+.aContainer {
+    color: white;
+    display: block;
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
+    transition: 1s;
+}
+
+.aContainer:hover {
+    color: #00a8cc;
+}
+
