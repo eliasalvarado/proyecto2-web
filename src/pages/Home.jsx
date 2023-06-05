@@ -5,9 +5,9 @@ import Contacto from '../components/contacto/Contacto'
 import Sobremi from '../components/sobreMi/Sobremi'
 import Skills from '../components/skills/Skills'
 import Portafolio from '../components/portafolio/Portafolio'
+import Mensaje from '../components/mensaje/Mensaje'
 
 function Home() {
-  const mensaje = 'print("Reinicialo");'
   return (
     <div className={`${styles.mainContainer}`}>
       <header>
@@ -16,9 +16,9 @@ function Home() {
       <section className={`${styles.inicioContainer}`} id="inicio">
         <div className={`${styles.presentationContainer}`}>
           <p className={`${styles.helloPresentation}`}>
-            {'While(True) {'}
+            {'if(error) {'}
             <br />
-            {mensaje}
+            <Mensaje />
             <br />
             {'}'}
           </p>
