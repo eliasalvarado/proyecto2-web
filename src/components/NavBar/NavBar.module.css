@@ -17,12 +17,13 @@
     align-items: center;
     box-sizing: border-box;
     max-width: 80%;
+    height: 100%;
     margin: 0 100px;
     padding: 0 15px;
 }
 
 .logo {
-    height: 40px;
+    height: 60px;
 }
 
 .ulContainer, .ulContainerActive {
@@ -45,30 +46,53 @@
 
 .iconContainer {
     display: none;
-    font-size: 35px;
+    font-size: 35px;   
+}
+
+.navHeader {
+    position: initial;
 }
 
 
 @media screen and (max-width:800px) {
-    .navHeader {
-        display: none;
-    }
-    .iconContainer {
-        display: block;
-        width: fit-content;
+    .headerContainer {
         margin: 0;
     }
+    .iconContainer {
+        display: block;   
+    }
+    .navHeader {
+        position: absolute;
+        top: -700px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
     .navHeaderResponsive {
-        transform: translateX(0) translateY(0);
-        transition: all 1s ease;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        top: 30%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: -1;
+        padding: 10% 0;
+        height: 50vh;
+        position: absolute;
+        top: 0;
+        background-color: #324771;
+        border-radius: 0 0 0 80%;
+        transition: all 2s;
+    }
+    .ulContainer {
+        display: none;
     }
     .ulContainerActive {
         display: block;
-        text-align: center;
-        transform: translateX(0) !important;
     }
     .liContainer {
-        margin: 5px 0;
-
+        margin-bottom: 10px;
     }
 }

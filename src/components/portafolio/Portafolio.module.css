@@ -6,9 +6,9 @@
 .title {
     font-size: 25px;
     text-transform: uppercase;
-    color: #638BB3;
+    color: white;
     text-decoration: underline;
-    text-decoration-color: #286863;
+    text-decoration-color: #0053B3;
 }
 
 .rowContainer {
@@ -17,3 +17,17 @@
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     place-items: center;
 }
+
+@media screen and (max-width:800px) {
+    .mainContainer {
+        
+    }
+}
+
+@media screen and (max-width:500px) {
+    .rowContainer {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1em;
+    }
+}
+

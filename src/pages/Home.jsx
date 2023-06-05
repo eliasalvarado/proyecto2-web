@@ -7,6 +7,7 @@ import Skills from '../components/skills/Skills'
 import Portafolio from '../components/portafolio/Portafolio'
 
 function Home() {
+  const mensaje = 'print("Reinicialo");'
   return (
     <div className={`${styles.mainContainer}`}>
       <header>
@@ -14,7 +15,13 @@ function Home() {
       </header>
       <section className={`${styles.inicioContainer}`} id="inicio">
         <div className={`${styles.presentationContainer}`}>
-          <p className={`${styles.helloPresentation}`}>Hello there </p>
+          <p className={`${styles.helloPresentation}`}>
+            {'While(True) {'}
+            <br />
+            {mensaje}
+            <br />
+            {'}'}
+          </p>
           <h2 className={`${styles.h2Presentation}`}>
             Soy
             <span className={`${styles.namePresentation}`}> Elías Alvarado</span>

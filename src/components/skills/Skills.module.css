@@ -6,9 +6,9 @@
 .title {
     font-size: 25px;
     text-transform: uppercase;
-    color: #638BB3;
+    color: white;
     text-decoration: underline;
-    text-decoration-color: #286863;
+    text-decoration-color: #00B16A;
 }
 
 .rowContainer {
@@ -24,6 +24,7 @@
     font-size: 15px;
     margin-bottom: 15px;
     text-align: center;
+    color: white;
 }
 
 .spanSkill {
@@ -42,7 +43,7 @@
 }
 
 .skillProgress {
-    background-color: #286863;
+    background-color: #00B16A;
     position: absolute;
     top: 0;
     left: 0;
@@ -51,13 +52,30 @@
 
 .skillPercentage {
     position: absolute;
-    top: -10px;
-    right: -15px;
+    top: 10px;
+    right: 20px;
     font-size: 10px;
-    height: 30px;
-    width: 30px;
-    background-color: #275275;
-    border-radius: 50px;
+    height: 0;
+    width: 0;
+    transform: rotate(-90deg);
     line-height: 30px;
     text-align: center;
+    color: white;
+}
+
+.skillProgress i {
+    position: absolute;
+    top: -21px;
+    right: -15px;
+    font-size: 50px;
+    color: #00B16A;
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width:800px) {
+    .mainContainer {
+        height: 100vh; 
+        padding: 100px 20px;
+        padding-bottom: 0;
+    }
 }

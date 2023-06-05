@@ -5,6 +5,8 @@
     padding: 100px 20px;
     color: white;
     text-align: start;
+    align-items: center;
+    justify-content: center;
 }
 
 .imgContainer {
@@ -16,7 +18,7 @@
     padding: 10px;
     width: 100%;
     border-radius: 15px;
-    background-color: #6C806C;
+    background-color: white;
 }
 
 .sobreContainer {
@@ -28,11 +30,10 @@
 .title {
     font-size: 25px;
     text-transform: uppercase;
-    color: #638BB3;
+    color: white;
     text-decoration: underline;
-    text-decoration-color: #286863;
+    text-decoration-color: #c4839c;
 }
-
 
 .presentation {
     font-size: 30px;
@@ -42,28 +43,68 @@
 }
 
 .presentationName {
-    color: #00AAAA;
+    color: white;
 }
 
 .sobreMi {
     font-size: 15px;
     line-height: 30px;
     margin-bottom: 10px;
-    color: #8DB0BB;
+    color: white;
 }
-
 
 .cv {
     display: inline-block;
     text-decoration: none;
-    border: 2px solid #A98541;
+    border: 2px solid white;
     border-radius: 20px;
     padding: 10px 20px;
     transition: 0.5s;
     color: white;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cv:hover {
-    background-color: #00AAAA;
-    color: #554800;
+    background-color: #c4839c;
+    color: white;
 }
+
+.cv i {
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width:800px) {
+    .mainContainer {
+        flex-direction: column;
+        padding: 50px 20px;
+        text-align: center;
+        align-items: center;
+        height: 100vh; 
+    }
+
+    .imgContainer {
+        margin: 0;
+        max-width: 250px;
+    }
+
+    .sobreContainer {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .title {
+        margin: 0;
+    }
+
+    .presentation {
+        margin: 5px 0;
+    }
+
+    .sobreMi {
+        line-height: normal;
+    }
+}
+

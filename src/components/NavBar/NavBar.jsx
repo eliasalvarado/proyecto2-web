@@ -30,7 +30,7 @@ function NavBar() {
           <ul className={`${!responsive ? styles.ulContainer : styles.ulContainerActive}`}>
             {navBarComponents.map((component) => (
               <li className={`${styles.liContainer}`}>
-                <a className={`${styles.aContainer}`} href={`#${component.id}`}>
+                <a className={`${styles.aContainer}`} href={`#${component.id}`} onClick={handleClick}>
                   {component.text}
                 </a>
               </li>

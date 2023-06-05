@@ -1,0 +1,21 @@
+.mainContainer {
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 10px));
+    max-width: 100%;
+}
+
+.logoContainer {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.nameContainer {
+    font-size: 10px;
+    font-weight: bold;
+}
+

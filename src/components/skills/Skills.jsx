@@ -44,10 +44,12 @@ function Skills() {
               </span>
               <div className={`${styles.skillBar}`}>
                 <div className={`${styles.skillProgress}`} style={{ width: `${language.percentage}%` }}>
-                  <span className={`${styles.skillPercentage}`}>
-                    {language.percentage}
-                    %
-                  </span>
+                  <i className="fa-solid fa-angle-up">
+                    <span className={`${styles.skillPercentage}`}>
+                      {language.percentage}
+                      %
+                    </span>
+                  </i>
                 </div>
               </div>
             </div>
@@ -64,10 +66,12 @@ function Skills() {
               </span>
               <div className={`${styles.skillBar}`}>
                 <div className={`${styles.skillProgress}`} style={{ width: `${skill.percentage}%` }}>
-                  <span className={`${styles.skillPercentage}`}>
-                    {skill.percentage}
-                    %
-                  </span>
+                  <i className="fa-solid fa-angle-up">
+                    <span className={`${styles.skillPercentage}`}>
+                      {skill.percentage}
+                      %
+                    </span>
+                  </i>
                 </div>
               </div>
             </div>
